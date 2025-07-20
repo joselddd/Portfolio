@@ -84,7 +84,7 @@ header, section, footer {
 .grid .img-frame {
   flex: 0 0 auto;
   width: 220px;
-  height: 380px;
+  /*height: 380px;*/
   margin: 0;
   background: #181818;
   border: 6px solid #00ffe5;
@@ -102,7 +102,7 @@ header, section, footer {
 .grid figure img,
 .grid .img-frame img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   display: block;
@@ -261,4 +261,23 @@ h2 {
 .boton-app:hover {
   background: #00bfae;
   color: #fff;
+}
+.video-cover {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+.video-cover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 24px #00ffe5;
+}
+#video .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 12px;
 }

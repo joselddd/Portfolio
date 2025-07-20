@@ -18,6 +18,9 @@
     Mi nombre es <strong>José Luis Delgado de Dios</strong>, aunque también me conocen como Necro, fundador de NecroTeams. Soy un técnico multidisciplinar con formación en desarrollo de aplicaciones multiplataforma (DAM) y dos años de experiencia práctica como programador, tanto en proyectos propios como en entornos reales durante mis prácticas en KURE SISTEMAS S.L.
   </p>
   <p>
+  Además, he realizado <strong>ediciones de vídeo</strong> para mi canal de YouTube y anuncios promocionales para mi app, <strong>diseñando también todas las portadas de mis vídeos</strong>. Esto amplía mis competencias en el ámbito audiovisual y la comunicación digital.
+    </p>
+  <p>
     Actualmente trabajo como capataz de limpieza viaria, pero mi trayectoria profesional abarca más de dos décadas gestionando equipos de más de 80 personas, coordinando turnos, materiales y recursos en centros públicos y escolares de la ciudad de Linares. Esta experiencia me ha dado una gran capacidad de liderazgo, planificación y resolución de imprevistos, que ahora aplico también en mis proyectos de software y videojuegos.
   </p>
   <p>
@@ -67,7 +70,7 @@
           <span>OlaZombies</span>
         </a>
         <a href="endlessflowers.html" class="juego-card">
-          <img src="assets/images/endlessflowers_thumb.jpg" alt="Endless Runner de Flores" />
+          <img src="assets/images/endlessflowers_thumb.png" alt="Endless Runner de Flores" />
           <span>Endless Runner de Flores</span>
         </a>
         <a href="bitfighter.html" class="juego-card">
@@ -92,67 +95,184 @@
         <figure><img src="assets/images/Stranger.jpg" alt="Stranger" /><figcaption>Stranger</figcaption></figure>
       </div>
     </section>
+ <section id="video">
+  <h2>🎬 Edición de vídeo y multimedia</h2>
+  <p>
+    He editado vídeos para mi canal de YouTube y creado anuncios promocionales para mis aplicaciones, diseñando también todas las portadas de mis vídeos. Esto me ha permitido combinar creatividad visual y comunicación digital para potenciar la presencia de mis proyectos.
+  </p>
+  <div class="grid">
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID1" target="_blank">
+        <img src="assets/images/portada1.jpg" alt="Portada vídeo 1" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
+        <img src="assets/images/portada2.jpg" alt="Portada vídeo 2" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID3" target="_blank">
+        <img src="assets/images/portada3.jpg" alt="Portada vídeo 3" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID4" target="_blank">
+        <img src="assets/images/portada4.jpg" alt="Portada vídeo 4" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID5" target="_blank">
+        <img src="assets/images/portada5.jpg" alt="Portada vídeo 5" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID6" target="_blank">
+        <img src="assets/images/portada6.jpg" alt="Portada vídeo 6" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID7" target="_blank">
+        <img src="assets/images/portada7.jpg" alt="Portada vídeo 7" />
+      </a>
+    </div>
+    <div class="img-frame">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID8" target="_blank">
+        <img src="assets/images/portada8.jpg" alt="Portada vídeo 8" />
+      </a>
+    </div>
+  </div>
+</section>
 
     <footer>
       <p>&copy; 2025 José Luis Delgado de Dios</p>
     </footer>
   </div>
-  <!-- ...tu HTML... -->
+ <!-- ...tu HTML... -->
 
 <!-- Lightbox para ilustraciones -->
-<div id="lightbox" class="lightbox" style="display:none;">
-  <span class="lightbox-close" id="lightboxClose">&times;</span>
-  <img class="lightbox-img" id="lightboxImg" src="" alt="Ilustración ampliada" />
-  <span class="lightbox-arrow lightbox-prev" id="lightboxPrev">&#10094;</span>
-  <span class="lightbox-arrow lightbox-next" id="lightboxNext">&#10095;</span>
+<div id="lightbox-ilus" class="lightbox" style="display:none;">
+  <span class="lightbox-close" id="lightboxCloseIlus">&times;</span>
+  <img class="lightbox-img" id="lightboxImgIlus" src="" alt="Ilustración ampliada" />
+  <span class="lightbox-arrow lightbox-prev" id="lightboxPrevIlus">&#10094;</span>
+  <span class="lightbox-arrow lightbox-next" id="lightboxNextIlus">&#10095;</span>
+</div>
+
+<!-- Lightbox para portadas de vídeo -->
+<div id="lightbox-video" class="lightbox" style="display:none;">
+  <span class="lightbox-close" id="lightboxCloseVid">&times;</span>
+  <img class="lightbox-img" id="lightboxImgVid" src="" alt="Portada vídeo ampliada" />
+  <a id="verVideoBtn" href="#" target="_blank" class="boton-app" style="display:none; margin-top:18px;">Ver vídeo en YouTube</a>
+  <span class="lightbox-arrow lightbox-prev" id="lightboxPrevVid">&#10094;</span>
+  <span class="lightbox-arrow lightbox-next" id="lightboxNextVid">&#10095;</span>
 </div>
 
 <script>
-  // Aquí va todo el JS del lightbox
+  // Ilustraciones
   const ilustraciones = Array.from(document.querySelectorAll('#ilustraciones .grid figure img'));
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const lightboxClose = document.getElementById('lightboxClose');
-  const lightboxPrev = document.getElementById('lightboxPrev');
-  const lightboxNext = document.getElementById('lightboxNext');
-  let currentIndex = 0;
-
-  function showLightbox(index) {
-    currentIndex = index;
-    lightboxImg.src = ilustraciones[index].src;
-    lightbox.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    lightbox.style.display = 'none';
-    document.body.style.overflow = '';
-  }
-  function showPrev() {
-    currentIndex = (currentIndex - 1 + ilustraciones.length) % ilustraciones.length;
-    lightboxImg.src = ilustraciones[currentIndex].src;
-  }
-  function showNext() {
-    currentIndex = (currentIndex + 1) % ilustraciones.length;
-    lightboxImg.src = ilustraciones[currentIndex].src;
-  }
+  const lightboxIlus = document.getElementById('lightbox-ilus');
+  const lightboxImgIlus = document.getElementById('lightboxImgIlus');
+  const lightboxCloseIlus = document.getElementById('lightboxCloseIlus');
+  const lightboxPrevIlus = document.getElementById('lightboxPrevIlus');
+  const lightboxNextIlus = document.getElementById('lightboxNextIlus');
+  let currentIlus = 0;
 
   ilustraciones.forEach((img, i) => {
     img.style.cursor = 'pointer';
-    img.addEventListener('click', () => showLightbox(i));
+    img.addEventListener('click', () => showLightboxIlus(i));
   });
-  lightboxClose.onclick = closeLightbox;
-  lightboxPrev.onclick = showPrev;
-  lightboxNext.onclick = showNext;
-  lightbox.onclick = function(e) {
-    if (e.target === lightbox) closeLightbox();
+
+  function showLightboxIlus(index) {
+    currentIlus = index;
+    lightboxImgIlus.src = ilustraciones[index].src;
+    lightboxIlus.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightboxIlus() {
+    lightboxIlus.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  function showPrevIlus() {
+    currentIlus = (currentIlus - 1 + ilustraciones.length) % ilustraciones.length;
+    lightboxImgIlus.src = ilustraciones[currentIlus].src;
+  }
+  function showNextIlus() {
+    currentIlus = (currentIlus + 1) % ilustraciones.length;
+    lightboxImgIlus.src = ilustraciones[currentIlus].src;
+  }
+  lightboxCloseIlus.onclick = closeLightboxIlus;
+  lightboxPrevIlus.onclick = showPrevIlus;
+  lightboxNextIlus.onclick = showNextIlus;
+  lightboxIlus.onclick = function(e) {
+    if (e.target === lightboxIlus) closeLightboxIlus();
   };
   document.addEventListener('keydown', function(e) {
-    if (lightbox.style.display === 'flex') {
-      if (e.key === 'ArrowLeft') showPrev();
-      if (e.key === 'ArrowRight') showNext();
-      if (e.key === 'Escape') closeLightbox();
+    if (lightboxIlus.style.display === 'flex') {
+      if (e.key === 'ArrowLeft') showPrevIlus();
+      if (e.key === 'ArrowRight') showNextIlus();
+      if (e.key === 'Escape') closeLightboxIlus();
     }
   });
+
+  // Portadas de vídeo
+  const portadas = Array.from(document.querySelectorAll('#video .grid .img-frame img'));
+  const lightboxVid = document.getElementById('lightbox-video');
+  const lightboxImgVid = document.getElementById('lightboxImgVid');
+  const lightboxCloseVid = document.getElementById('lightboxCloseVid');
+  const lightboxPrevVid = document.getElementById('lightboxPrevVid');
+  const lightboxNextVid = document.getElementById('lightboxNextVid');
+  const verVideoBtn = document.getElementById('verVideoBtn');
+  let currentVid = 0;
+
+  document.querySelectorAll('#video .img-frame a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const img = this.querySelector('img');
+      const index = portadas.indexOf(img);
+      if (index !== -1) showLightboxVid(index, this.href);
+    });
+  });
+
+  function showLightboxVid(index, href) {
+    currentVid = index;
+    lightboxImgVid.src = portadas[index].src;
+    lightboxVid.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    verVideoBtn.style.display = 'inline-block';
+    verVideoBtn.href = href;
+  }
+  function closeLightboxVid() {
+    lightboxVid.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  function showPrevVid() {
+    currentVid = (currentVid - 1 + portadas.length) % portadas.length;
+    lightboxImgVid.src = portadas[currentVid].src;
+    const link = portadas[currentVid].closest('a');
+    verVideoBtn.href = link ? link.href : '#';
+  }
+  function showNextVid() {
+    currentVid = (currentVid + 1) % portadas.length;
+    lightboxImgVid.src = portadas[currentVid].src;
+    const link = portadas[currentVid].closest('a');
+    verVideoBtn.href = link ? link.href : '#';
+  }
+  lightboxCloseVid.onclick = closeLightboxVid;
+  lightboxPrevVid.onclick = showPrevVid;
+  lightboxNextVid.onclick = showNextVid;
+  lightboxVid.onclick = function(e) {
+    if (e.target === lightboxVid) closeLightboxVid();
+  };
+  document.addEventListener('keydown', function(e) {
+    if (lightboxVid.style.display === 'flex') {
+      if (e.key === 'ArrowLeft') showPrevVid();
+      if (e.key === 'ArrowRight') showNextVid();
+      if (e.key === 'Escape') closeLightboxVid();
+    }
+  });
+  lightboxImgVid.onclick = function() {
+    window.open(verVideoBtn.href, '_blank');
+  };
 </script>
 </body>
 </html>
