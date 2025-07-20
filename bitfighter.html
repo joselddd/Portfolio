@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BitFighter - Portfolio de José Luis Delgado de Dios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BitFighter</h1>
+      <p>Un juego multijugador competitivo desarrollado en Unity</p>
+      <a href="index.html" class="boton-app" style="margin-top:16px;">Volver al portfolio</a>
+    </header>
+
+    <section class="sobre-mi">
+      <h2>🎮 BitFighter</h2>
+
+      <div class="info-block">
+        <h3>Tipo</h3>
+        <p>Multijugador competitivo con pase de batalla</p>
+      </div>
+      <div class="info-block">
+        <h3>Plataforma</h3>
+        <p>Android</p>
+      </div>
+      <div class="info-block">
+        <h3>Herramientas</h3>
+        <p>Unity, Photon, PlayFab</p>
+      </div>
+      <div class="info-block">
+        <h3>Rol</h3>
+        <p>Programador de sistemas, UI y lógica de juego</p>
+      </div>
+
+      <div class="info-block">
+        <h3>🧩 Funcionalidades desarrolladas</h3>
+        <h4>Sistema de Pase de Batalla</h4>
+        <p>
+          Control de niveles, experiencia y recompensas (normal y premium). Recompensas desbloqueables y reclamables manualmente. UI adaptativa con iconos, colores, candados y checks dinámicos. Compra de pase por monedas, con menú alternativo si no tienes suficientes.
+        </p>
+        <h4>Gestión de monedas</h4>
+        <p>
+          Compra del pase y visualización del saldo en todo momento. Menú de compra de monedas. Modo debug para testeo con monedas ilimitadas.
+        </p>
+        <h4>Selección de personajes</h4>
+        <p>
+          Navegación entre personajes desbloqueados. Guardado con PlayerPrefs. Sincronización multijugador con Photon. Personajes integrados en todas las escenas.
+        </p>
+        <h4>Gestión de cámara</h4>
+        <p>
+          Cámara que sigue a los personajes y se adapta al gameplay.
+        </p>
+        <h4>Habilidades y efectos visuales</h4>
+        <p>
+          Habilidades únicas por personaje con lógica de activación y cooldown. VFX integrados para mejorar la experiencia visual.
+        </p>
+        <h4>Joysticks virtuales para control táctil</h4>
+        <p>
+          Joystick de movimiento y disparo adaptados a móviles. Sistema de joystick “fantasma” que aparece donde se pulsa. Control intuitivo y flexible en móviles y tablets.
+        </p>
+        <h4>Persistencia y arquitectura</h4>
+        <p>
+          Uso de Singleton y DontDestroyOnLoad solo en managers globales. UI destruida y recreada correctamente entre escenas. Eventos como OnExperienciaActualizada mantienen la UI sincronizada.
+        </p>
+        <h4>Flujo de escenas limpio</h4>
+        <p>
+          Restauración del estado del jugador y código de sala al volver al menú. Limpieza automática de la UI.
+        </p>
+        <h4>Extras y buenas prácticas</h4>
+        <p>
+          Métodos para limpiar datos corruptos y facilitar debug. Uso extensivo de logs. Arquitectura escalable, separando lógica y presentación.
+        </p>
+      </div>
+
+      <div class="info-block resumen">
+        <h3>📌 En resumen</h3>
+        <p>
+          He desarrollado un sistema completo de pase de batalla, selección de personajes, habilidades, control táctil con joysticks virtuales avanzados y UI dinámica para un juego multijugador, todo con buenas prácticas y arquitectura limpia.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>📸 Galería</h2>
+      <div class="grid">
+        <div class="img-frame">
+          <img src="assets/images/bitfighter_1.png" alt="Gameplay BitFighter 1" />
+        </div>
+        <div class="img-frame">
+          <img src="assets/images/bitfighter_2.png" alt="Gameplay BitFighter 2" />
+        </div>
+        <div class="img-frame">
+          <img src="assets/images/bitfighter_3.png" alt="Gameplay BitFighter 3" />
+        </div>
+        <div class="img-frame">
+          <img src="assets/images/bitfighter_4.png" alt="Gameplay BitFighter 4" />
+        </div>
+        <div class="img-frame">
+          <img src="assets/images/bitfighter_5.png" alt="Gameplay BitFighter 5" />
+        </div>
+        <div class="img-frame">
+          <img src="assets/images/bitfighter_6.png" alt="Gameplay BitFighter 6" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎥 Vídeo</h2>
+      <div style="display:flex; justify-content:center; margin-bottom:24px;">
+        <iframe width="360" height="202" src="https://www.youtube.com/embed/TU_VIDEO_ID" title="BitFighter Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p style="text-align:center;">
+        <a href="https://youtu.be/TU_VIDEO_ID" target="_blank" class="boton-app">Ver en YouTube</a>
+      </p>
+    </section>
+<!-- Lightbox para galería BitFighter -->
+<div id="lightbox-bf" class="lightbox" style="display:none;">
+  <span class="lightbox-close" id="lightboxCloseBf">&times;</span>
+  <img class="lightbox-img" id="lightboxImgBf" src="" alt="BitFighter ampliado" />
+  <span class="lightbox-arrow lightbox-prev" id="lightboxPrevBf">&#10094;</span>
+  <span class="lightbox-arrow lightbox-next" id="lightboxNextBf">&#10095;</span>
+</div>
+    <footer>
+      <p>&copy; 2025 José Luis Delgado de Dios</p>
+    </footer>
+  </div>
+ <script>
+  // Lightbox para galería BitFighter
+  const bfImgs = Array.from(document.querySelectorAll('.grid .img-frame img'));
+  const lightboxBf = document.getElementById('lightbox-bf');
+  const lightboxImgBf = document.getElementById('lightboxImgBf');
+  const lightboxCloseBf = document.getElementById('lightboxCloseBf');
+  const lightboxPrevBf = document.getElementById('lightboxPrevBf');
+  const lightboxNextBf = document.getElementById('lightboxNextBf');
+  let currentBf = 0;
+
+  bfImgs.forEach((img, i) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => showLightboxBf(i));
+  });
+
+  function showLightboxBf(index) {
+    currentBf = index;
+    lightboxImgBf.src = bfImgs[index].src;
+    lightboxBf.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightboxBf() {
+    lightboxBf.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  function showPrevBf() {
+    currentBf = (currentBf - 1 + bfImgs.length) % bfImgs.length;
+    lightboxImgBf.src = bfImgs[currentBf].src;
+  }
+  function showNextBf() {
+    currentBf = (currentBf + 1) % bfImgs.length;
+    lightboxImgBf.src = bfImgs[currentBf].src;
+  }
+  lightboxCloseBf.onclick = closeLightboxBf;
+  lightboxPrevBf.onclick = showPrevBf;
+  lightboxNextBf.onclick = showNextBf;
+  lightboxBf.onclick = function(e) {
+    if (e.target === lightboxBf) closeLightboxBf();
+  };
+  document.addEventListener('keydown', function(e) {
+    if (lightboxBf.style.display === 'flex') {
+      if (e.key === 'ArrowLeft') showPrevBf();
+      if (e.key === 'ArrowRight') showNextBf();
+      if (e.key === 'Escape') closeLightboxBf();
+    }
+  });
+</script>
+</body>
+</html>

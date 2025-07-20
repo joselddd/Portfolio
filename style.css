@@ -281,3 +281,20 @@ h2 {
   justify-content: center;
   margin-top: 12px;
 }
+
+.info-block {
+  margin-bottom: 22px;
+  padding: 18px 20px;
+  background: #181818;
+  border-radius: 12px;
+  border-left: 5px solid #00ffe5;
+}
+.info-block h3, .info-block h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #00ffe5;
+}
+.info-block.resumen {
+  background: #222;
+  border-left: 5px solid #ffb300;
+}
