@@ -131,3 +131,134 @@ header, section, footer {
   background: #00ffe5;
   border-radius: 8px;
 }
+.app-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.app-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0;
+}
+
+.app-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: left;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 32px 0 18px 0;
+}
+/* Lightbox estilos */
+.lightbox {
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.2s;
+}
+
+.lightbox-img {
+  max-width: 96vw;
+  max-height: 80vh;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #000;
+  margin: 32px 0 16px 0;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.2s;
+}
+.lightbox-close:hover { color: #00ffe5; }
+
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10001;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 0 16px;
+  transform: translateY(-50%);
+  transition: background 0.2s, color 0.2s;
+}
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+.lightbox-arrow:hover { background: #00ffe5; color: #181818; }
+.sobre-mi {
+  max-width: 800px;
+  margin: 0 auto 32px auto;
+  padding: 24px 20px 8px 20px;
+  background: #202020;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #00ffe5;
+}
+
+.sobre-mi p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.boton-app {
+  display: inline-block;
+  margin: 8px 0 12px 0;
+  padding: 10px 24px;
+  background: #00ffe5;
+  color: #181818;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.boton-app:hover {
+  background: #00bfae;
+  color: #fff;
+}

@@ -12,26 +12,58 @@
       <h1>José Luis Delgado de Dios</h1>
       <p>Desarrollador de aplicaciones multiplataforma y artista digital</p>
     </header>
+    <section id="sobre-mi" class="sobre-mi">
+  <h2>👤 Sobre mí</h2>
+  <p>
+    Mi nombre es <strong>José Luis Delgado de Dios</strong>, aunque también me conocen como Necro, fundador de NecroTeams. Soy un técnico multidisciplinar con formación en desarrollo de aplicaciones multiplataforma (DAM) y dos años de experiencia práctica como programador, tanto en proyectos propios como en entornos reales durante mis prácticas en KURE SISTEMAS S.L.
+  </p>
+  <p>
+    Actualmente trabajo como capataz de limpieza viaria, pero mi trayectoria profesional abarca más de dos décadas gestionando equipos de más de 80 personas, coordinando turnos, materiales y recursos en centros públicos y escolares de la ciudad de Linares. Esta experiencia me ha dado una gran capacidad de liderazgo, planificación y resolución de imprevistos, que ahora aplico también en mis proyectos de software y videojuegos.
+  </p>
+  <p>
+    En los últimos años me he especializado en el desarrollo de videojuegos con Unity, aplicaciones Android y sistemas de control de progreso, como los que he implementado en proyectos como <strong>BitFighter</strong>, <strong>OlaZombies</strong> y un Endless Runner con mecánicas personalizadas. Con conocimiento de herramientas como Unity, PlayFab, Photon, y practico una programación estructurada y escalable, aplicando buenas prácticas de arquitectura y diseño.
+  </p>
+  <p>
+    Mi objetivo es seguir creciendo profesionalmente como programador, combinando inicialmente trabajos de desarrollo por las tardes con mi puesto actual, para adquirir experiencia y dar el salto definitivo al mundo de la programación a tiempo completo.
+  </p>
+  <p>
+    También tengo un nivel B1 de inglés certificado por Aptis, y estoy abierto a oportunidades de crecimiento, tanto en remoto como presenciales.
+  </p>
+</section>
 
-    <section id="proyectos">
-      <h2>📱 Aplicación: Control de Horas Extras</h2>
-      <p>App publicada en Google Play. Permite registrar y calcular automáticamente las horas extras trabajadas, exportar informes y calcular pagos según el precio configurado.</p>
+<section id="proyectos">
+  <h2>📱 Aplicaciones Android:</h2>
+  <div class="app-header">
+    <img src="assets/images/app_icon.jpeg" alt="Icono Control de Horas Extras" class="app-icon" />
+    <span class="app-title">Control de Horas Extras</span>
+  </div>
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.necro.controlhorario&pcampaignid=web_share" target="_blank" class="boton-app" style="display:inline-block; margin-bottom:8px;">
+      App publicada en Google Play
+    </a>
+  </p>
+  <p>
+    Permite registrar y calcular automáticamente las horas extras trabajadas, exportar informes y calcular pagos según el precio configurado.<br>
+    <span style="color:#00ffe5; font-weight:bold;">
+      ¡Casi 200 descargas en más de 20 países!
+    </span>
+  </p>
   <div class="grid">
-  <div class="img-frame"><img src="assets/images/Captura1.png" alt="Pantalla principal de cálculo de horas" /></div>
-  <div class="img-frame"><img src="assets/images/Captura2.png" alt="Informe generado en PDF" /></div>
-  <div class="img-frame"><img src="assets/images/Captura3.png" alt="Resumen de horas acumuladas y pagadas" /></div>
-  <div class="img-frame"><img src="assets/images/Captura4.png" alt="Cálculo instantáneo de pagos" /></div>
-  <div class="img-frame"><img src="assets/images/Captura5.png" alt="Formulario para registrar horas" /></div>
-  <div class="img-frame"><img src="assets/images/Captura6.png" alt="Menú lateral de la aplicación" /></div>
-  <div class="img-frame"><img src="assets/images/Captura7.png" alt="Configuración del precio por hora y jornada" /></div>
-</div>
-    </section>
+    <div class="img-frame"><img src="assets/images/Captura1.png" alt="Pantalla principal de cálculo de horas" /></div>
+    <div class="img-frame"><img src="assets/images/Captura2.png" alt="Informe generado en PDF" /></div>
+    <div class="img-frame"><img src="assets/images/Captura3.png" alt="Resumen de horas acumuladas y pagadas" /></div>
+    <div class="img-frame"><img src="assets/images/Captura4.png" alt="Cálculo instantáneo de pagos" /></div>
+    <div class="img-frame"><img src="assets/images/Captura5.png" alt="Formulario para registrar horas" /></div>
+    <div class="img-frame"><img src="assets/images/Captura6.png" alt="Menú lateral de la aplicación" /></div>
+    <div class="img-frame"><img src="assets/images/Captura7.png" alt="Configuración del precio por hora y jornada" /></div>
+  </div>
+</section>
 
-    <section id="juegos">
-      <h2>🎮 Juegos en Unity</h2>
-      <div class="juegos-list">
-        <a href="olazombies.html" class="juego-card">
-          <img src="assets/images/olazombies_thumb.jpg" alt="OlaZombies" />
+<section id="juegos">
+  <h2>🎮 Juegos en Unity</h2>
+  <div class="juegos-list">
+    <a href="olazombies.html" class="juego-card">
+      <img src="assets/images/olazombies_thumb.jpg" alt="OlaZombies" />
           <span>OlaZombies</span>
         </a>
         <a href="endlessflowers.html" class="juego-card">
@@ -65,5 +97,62 @@
       <p>&copy; 2025 José Luis Delgado de Dios</p>
     </footer>
   </div>
+  <!-- ...tu HTML... -->
+
+<!-- Lightbox para ilustraciones -->
+<div id="lightbox" class="lightbox" style="display:none;">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Ilustración ampliada" />
+  <span class="lightbox-arrow lightbox-prev" id="lightboxPrev">&#10094;</span>
+  <span class="lightbox-arrow lightbox-next" id="lightboxNext">&#10095;</span>
+</div>
+
+<script>
+  // Aquí va todo el JS del lightbox
+  const ilustraciones = Array.from(document.querySelectorAll('#ilustraciones .grid figure img'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+  let currentIndex = 0;
+
+  function showLightbox(index) {
+    currentIndex = index;
+    lightboxImg.src = ilustraciones[index].src;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + ilustraciones.length) % ilustraciones.length;
+    lightboxImg.src = ilustraciones[currentIndex].src;
+  }
+  function showNext() {
+    currentIndex = (currentIndex + 1) % ilustraciones.length;
+    lightboxImg.src = ilustraciones[currentIndex].src;
+  }
+
+  ilustraciones.forEach((img, i) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => showLightbox(i));
+  });
+  lightboxClose.onclick = closeLightbox;
+  lightboxPrev.onclick = showPrev;
+  lightboxNext.onclick = showNext;
+  lightbox.onclick = function(e) {
+    if (e.target === lightbox) closeLightbox();
+  };
+  document.addEventListener('keydown', function(e) {
+    if (lightbox.style.display === 'flex') {
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
+      if (e.key === 'Escape') closeLightbox();
+    }
+  });
+</script>
 </body>
 </html>
