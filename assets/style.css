@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    background-image: url('assets/images/code-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+}
+section {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    border-radius: 12px;
+}
+section h2 {
+    color: #00ffe5;
+    margin-bottom: 1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #888;
+    background-color: rgba(0, 0, 0, 0.8);
+}
