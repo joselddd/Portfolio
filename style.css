@@ -49,3 +49,41 @@ footer {
     color: #888;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.grid figure {
+    width: 220px;
+    height: 320px;
+    margin: 12px auto;
+    background: #181818;
+    border: 6px solid #00ffe5;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid figure img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.grid figure figcaption {
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 1rem;
+    padding: 6px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
