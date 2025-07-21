@@ -15,44 +15,71 @@
     </header>
 
     <section class="sobre-mi">
-      <h2>🕹️ Descripción</h2>
-      <p>
-        <strong>Endless Runner</strong> es un juego de tipo runner infinito desarrollado en Unity, donde el jugador debe esquivar obstáculos y recoger flores para sumar puntos. El juego cuenta con mecánicas personalizadas, generación procedural de obstáculos y un sistema de progresión de dificultad.
-      </p>
-      <ul>
-        <li>Desarrollado íntegramente en Unity (C#)</li>
-        <li>Gráficos y animaciones originales</li>
-        <li>Generación procedural de niveles</li>
-        <li>Sistema de puntuación y récords</li>
-        <li>Optimizado para dispositivos móviles y PC</li>
-      </ul>
-    </section>
+      <h2>🌸🏃‍♂️ Proyecto: Endless Runner</h2>
+      <div class="info-block" style="text-align:center;">
+        <span style="color:#00ffe5;"><strong>Tipo:</strong></span> Endless Runner 2D &nbsp;|&nbsp;
+        <span style="color:#00ffe5;"><strong>Plataforma:</strong></span> PC &nbsp;|&nbsp;
+        <span style="color:#00ffe5;"><strong>Herramienta:</strong></span> Unity &nbsp;|&nbsp;
+        <span style="color:#00ffe5;"><strong>Rol:</strong></span> Programador de gameplay, efectos y animaciones
+      </div>
 
-    <section>
-      <h2>📸 Galería</h2>
-      <div class="grid">
-        <div class="img-frame">
-          <img src="assets/images/endlessflowers_1.png" alt="Gameplay Endless Runner 1" />
-        </div>
-        <div class="img-frame">
-          <img src="assets/images/endlessflowers_2.png" alt="Gameplay Endless Runner 2" />
-        </div>
-        <div class="img-frame">
-          <img src="assets/images/endlessflowers_3.png" alt="Gameplay Endless Runner 3" />
-        </div>
-        <div class="img-frame">
-          <img src="assets/images/endlessflowers_4.png" alt="Gameplay Endless Runner 4" />
-        </div>
+      <div class="info-block">
+        <h3>🧩 Funcionalidades desarrolladas</h3>
+        <h4 style="color:#00ffe5;">Sistema de recogida de flores</h4>
+        <p>
+          Script <strong>Flor.cs</strong> con tipos de flor (Girasol, Margarita, Rosa), cada uno otorgando diferentes puntos.<br>
+          Al recogerlas: suma de puntos, efecto visual instanciado y destrucción del objeto.<br>
+          El efecto acompaña al jugador tras la recogida (hijo del jugador).
+        </p>
+        <h4 style="color:#00ffe5;">Control del personaje</h4>
+        <p>
+          Movimiento lateral y salto con límites para no salirse de pantalla.<br>
+          Script <strong>PlayerController.cs</strong> que gestiona animaciones (<em>isRunning</em>, <em>isJumping</em>, <em>death</em>).<br>
+          Animación de muerte y reinicio tras colisión o caída.
+        </p>
+        <h4 style="color:#00ffe5;">Animaciones y efectos</h4>
+        <p>
+          Animaciones creadas con sprite sheets y controladas por Animator Controller.<br>
+          Prefabs visuales que se destruyen automáticamente tras ejecutarse (mediante script personalizado).
+        </p>
+        <h4 style="color:#00ffe5;">Organización y buenas prácticas</h4>
+        <p>
+          Uso de prefabs reutilizables para efectos, flores y personajes.<br>
+          Lógica de puntuación centralizada en <strong>GameManager</strong>.<br>
+          Gestión de colisiones, físicas y animaciones de forma modular.
+        </p>
+        <h4 style="color:#00ffe5;">Iniciación al control de versiones</h4>
+        <p>
+          Configuración básica para GitHub: <strong>.gitignore</strong>, commits y estructura del repositorio para colaboración o respaldo.
+        </p>
+      </div>
+
+      <div class="info-block resumen">
+        <h3 style="color:#ffb300;">📌 En resumen</h3>
+        <p>
+          He desarrollado la jugabilidad base de un Endless Runner, creando mecánicas de recogida de objetos con efectos visuales, movimiento del personaje, animaciones, y organización del código con buenas prácticas para facilitar futuras expansiones y trabajo en equipo.
+        </p>
       </div>
     </section>
 
-    <section>
+     <section>
       <h2>🎥 Vídeo</h2>
       <div style="display:flex; justify-content:center; margin-bottom:24px;">
-        <iframe width="360" height="202" src="https://www.youtube.com/embed/TU_VIDEO_ID" title="Endless Runner Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video width="360" height="202" controls>
+          <source src="assets/videos/endlessRunner.mp4" type="video/mp4">
+          Tu navegador no soporta el vídeo.
+        </video>
       </div>
-      <p style="text-align:center;">
-        <a href="https://youtu.be/TU_VIDEO_ID" target="_blank" class="boton-app">Ver en YouTube</a>
+    </section>
+
+    <section id="contacto">
+      <h2>📬 Contacto</h2>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:joseluisddd@outlook.es" style="color:#00ffe5;">joseluisddd@outlook.es</a>
+        <br>
+        <strong>Teléfono:</strong>
+        <a href="tel:+34665533578" style="color:#00ffe5;">+34 665 533 578</a>
       </p>
     </section>
 
